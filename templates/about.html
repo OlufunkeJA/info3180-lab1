@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
+    <meta charset="UTF-8">
+    <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 
 <body>
- <h1>Olufunkẹ JA Ogunde</h1>
- <p>I am a final year Electronics & Computer Science student at the University of the West Indies, 
-            Mona. I am also an Infrastructure Intern on campus, where I gain hands-on experience about networking 
-            infrastructure. I find that I enjoy building websites through code!</p>
+    <h1>Olufunkẹ JA Ogunde</h1>
+    <img src="{{ url_for('static', filename='Me.jpg') }}"/>
+    <p>I am a final year Electronics & Computer Science student at the University of the West Indies, 
+    Mona. I am also an Infrastructure Intern on campus, where I gain hands-on experience about networking 
+    infrastructure. I find that I enjoy building websites through code!</p>
 </body>
 
 </html> 
